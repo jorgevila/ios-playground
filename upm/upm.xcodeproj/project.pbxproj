@@ -13,6 +13,7 @@
 		E55602161BAF113B000758F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E55602141BAF113B000758F2 /* Main.storyboard */; };
 		E55602181BAF113B000758F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E55602171BAF113B000758F2 /* Assets.xcassets */; };
 		E556021B1BAF113B000758F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E55602191BAF113B000758F2 /* LaunchScreen.storyboard */; };
+		E55602231BB8871C000758F2 /* playstore-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E55602221BB8871C000758F2 /* playstore-icon.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E55602171BAF113B000758F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E556021A1BAF113B000758F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E556021C1BAF113B000758F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E55602221BB8871C000758F2 /* playstore-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "playstore-icon.png"; path = "../../escupm01_new/android/playstore-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				E55602121BAF113B000758F2 /* ViewController.m */,
 				E55602141BAF113B000758F2 /* Main.storyboard */,
 				E55602171BAF113B000758F2 /* Assets.xcassets */,
+				E55602221BB8871C000758F2 /* playstore-icon.png */,
 				E55602191BAF113B000758F2 /* LaunchScreen.storyboard */,
 				E556021C1BAF113B000758F2 /* Info.plist */,
 				E556020B1BAF113B000758F2 /* Supporting Files */,
@@ -138,6 +141,7 @@
 			files = (
 				E556021B1BAF113B000758F2 /* LaunchScreen.storyboard in Resources */,
 				E55602181BAF113B000758F2 /* Assets.xcassets in Resources */,
+				E55602231BB8871C000758F2 /* playstore-icon.png in Resources */,
 				E55602161BAF113B000758F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
