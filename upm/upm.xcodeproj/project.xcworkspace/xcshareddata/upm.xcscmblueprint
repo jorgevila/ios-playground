@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "01E16FA1368845E0B422E7E92308FD44A07EF969",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "064FFC8868FDE902BC7FEA75E8A12A6963FAAB65" : 0,
+    "01E16FA1368845E0B422E7E92308FD44A07EF969" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0FAE1746-40DA-40AC-A317-B74C472D1F0A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "064FFC8868FDE902BC7FEA75E8A12A6963FAAB65" : "",
+    "01E16FA1368845E0B422E7E92308FD44A07EF969" : "ios-ejemplo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "upm",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "upm\/upm.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:jorgevila\/ios-playground.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "01E16FA1368845E0B422E7E92308FD44A07EF969"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jorgevila\/iOS-doc.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "064FFC8868FDE902BC7FEA75E8A12A6963FAAB65"
+    }
+  ]
+}
