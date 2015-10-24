@@ -40,6 +40,8 @@
     
     // Display the message
     [validateAlert show];
+    
+     [self performSegueWithIdentifier:@"login" sender:self];
 }
 
 @end
