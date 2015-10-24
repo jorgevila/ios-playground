@@ -10,10 +10,14 @@
 
 @interface ViewController ()
 
-
 @end
 
 @implementation ViewController
+
+@synthesize user;
+
+@synthesize password;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,8 +31,12 @@
 
 - (IBAction)validate:(id)sender {
     
+    NSString *msg = [NSString stringWithFormat:@"User: %@ pass: %@", [user text], [password text]];
+    
     UIAlertView *validateAlert = [[UIAlertView alloc]
-                                    initWithTitle:@"Testing alert" message:@"Testing!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                                    initWithTitle:@"Datos" message:msg delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    
+    NSLog(@"%@", msg); 
     
     // Display the message
     [validateAlert show];

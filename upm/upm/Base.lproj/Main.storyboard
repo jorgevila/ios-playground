@@ -70,6 +70,10 @@
                             <constraint firstItem="Zpz-4B-JDP" firstAttribute="top" secondItem="J43-oD-9Sj" secondAttribute="bottom" constant="62" id="y8Z-Mc-70h"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="password" destination="Srn-X2-x0O" id="pwl-AX-ZVv"/>
+                        <outlet property="user" destination="Mal-0w-lT7" id="96x-xH-IdL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
