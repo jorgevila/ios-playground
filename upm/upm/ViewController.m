@@ -10,6 +10,7 @@
 
 @interface ViewController ()
 
+
 @end
 
 @implementation ViewController
@@ -22,6 +23,15 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)validate:(id)sender {
+    
+    UIAlertView *validateAlert = [[UIAlertView alloc]
+                                    initWithTitle:@"Testing alert" message:@"Testing!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    
+    // Display the message
+    [validateAlert show];
 }
 
 @end

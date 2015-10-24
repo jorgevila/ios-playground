@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)validate:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UITextField *user;
+@property (weak, nonatomic) IBOutlet UITextField *pass;
 
 @end
 
