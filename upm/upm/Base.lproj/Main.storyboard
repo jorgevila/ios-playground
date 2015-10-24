@@ -2,6 +2,9 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Login-->
@@ -99,24 +102,186 @@
             </objects>
             <point key="canvasLocation" x="1778" y="608"/>
         </scene>
-        <!--Item 1-->
+        <!--Alumno-->
         <scene sceneID="j8f-1e-RM3">
             <objects>
-                <viewController id="sVa-jh-qqg" sceneMemberID="viewController">
+                <viewController title="Alumno" id="sVa-jh-qqg" customClass="AlumnoViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fNw-Yt-dsR"/>
-                        <viewControllerLayoutGuide type="bottom" id="oN0-FZ-V3Y"/>
+                        <viewControllerLayoutGuide type="top" id="RvX-7l-jjN"/>
+                        <viewControllerLayoutGuide type="bottom" id="gk9-uE-Sgh"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mFy-om-gfE">
+                    <view key="view" contentMode="scaleToFill" id="qWu-1k-i26">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Triky-el-famoso-Monstruo-de-la_54363259499_54028874188_960_639" translatesAutoresizingMaskIntoConstraints="NO" id="aOO-ND-6b9">
+                                <rect key="frame" x="180" y="108" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XV4-qF-Vy6">
+                                <rect key="frame" x="180" y="314" width="112" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="112" id="N2O-FJ-JQf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OM0-U9-5ae">
+                                <rect key="frame" x="180" y="364" width="112" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Triky" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNg-Zk-H3i">
+                                <rect key="frame" x="310" y="314" width="110" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="slm-lo-uP3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mi@casa.es" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqO-oE-EJ6">
+                                <rect key="frame" x="310" y="364" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aOO-ND-6b9" firstAttribute="leading" secondItem="XV4-qF-Vy6" secondAttribute="leading" id="2GN-7d-dvh"/>
+                            <constraint firstItem="zNg-Zk-H3i" firstAttribute="leading" secondItem="bqO-oE-EJ6" secondAttribute="leading" id="4CI-D2-Npg"/>
+                            <constraint firstItem="aOO-ND-6b9" firstAttribute="centerX" secondItem="qWu-1k-i26" secondAttribute="centerX" id="A1n-3I-kUD"/>
+                            <constraint firstItem="OM0-U9-5ae" firstAttribute="top" secondItem="XV4-qF-Vy6" secondAttribute="bottom" constant="29" id="AAz-Xw-QIq"/>
+                            <constraint firstItem="zNg-Zk-H3i" firstAttribute="baseline" secondItem="XV4-qF-Vy6" secondAttribute="firstBaseline" id="FoU-Ji-x7W"/>
+                            <constraint firstItem="zNg-Zk-H3i" firstAttribute="trailing" secondItem="aOO-ND-6b9" secondAttribute="trailing" id="NTH-92-8nh"/>
+                            <constraint firstItem="gk9-uE-Sgh" firstAttribute="top" secondItem="OM0-U9-5ae" secondAttribute="bottom" constant="166" id="SKc-Go-LJD"/>
+                            <constraint firstItem="bqO-oE-EJ6" firstAttribute="baseline" secondItem="OM0-U9-5ae" secondAttribute="firstBaseline" id="Wmn-AZ-cEd"/>
+                            <constraint firstItem="XV4-qF-Vy6" firstAttribute="baseline" secondItem="zNg-Zk-H3i" secondAttribute="baseline" id="XYz-uB-e2k"/>
+                            <constraint firstItem="XV4-qF-Vy6" firstAttribute="trailing" secondItem="OM0-U9-5ae" secondAttribute="trailing" id="arP-ME-iwd"/>
+                            <constraint firstItem="XV4-qF-Vy6" firstAttribute="top" secondItem="aOO-ND-6b9" secondAttribute="bottom" constant="78" id="czK-3u-O8T"/>
+                            <constraint firstItem="bqO-oE-EJ6" firstAttribute="trailing" secondItem="zNg-Zk-H3i" secondAttribute="trailing" id="hJN-AJ-iLo"/>
+                            <constraint firstItem="zNg-Zk-H3i" firstAttribute="leading" secondItem="XV4-qF-Vy6" secondAttribute="trailing" constant="18" id="p69-bd-Tde"/>
+                            <constraint firstItem="OM0-U9-5ae" firstAttribute="leading" secondItem="XV4-qF-Vy6" secondAttribute="leading" id="vKP-wV-cQB"/>
+                            <constraint firstItem="bqO-oE-EJ6" firstAttribute="baseline" secondItem="OM0-U9-5ae" secondAttribute="baseline" id="w1y-Yy-Nbv"/>
+                            <constraint firstItem="aOO-ND-6b9" firstAttribute="top" secondItem="RvX-7l-jjN" secondAttribute="bottom" constant="44" id="ycz-s5-YxR"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="QfY-QI-hhg"/>
+                    <navigationItem key="navigationItem" title="Alumno" id="EyB-mb-CaE">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="IC5-oL-NCu">
+                            <connections>
+                                <segue destination="LTS-fq-c7k" kind="show" id="21H-F8-Y6C"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="email" destination="bqO-oE-EJ6" id="8Hy-QV-KML"/>
+                        <outlet property="name" destination="zNg-Zk-H3i" id="6tj-ZP-yKm"/>
+                        <outlet property="photo" destination="aOO-ND-6b9" id="W5D-IM-6wt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E1k-eT-O0L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1778" y="-52"/>
+            <point key="canvasLocation" x="2534" y="-136"/>
+        </scene>
+        <!--Editar Alumno-->
+        <scene sceneID="abY-JC-vZX">
+            <objects>
+                <viewController title="Editar Alumno" id="LTS-fq-c7k" customClass="EditAlumnoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O7p-bh-Nk3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Icw-H1-ROc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CAj-Zh-IeX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzH-DH-Px0">
+                                <rect key="frame" x="71" y="301" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3I-jy-FIf">
+                                <rect key="frame" x="71" y="364" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foto:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Rt-oi-jBe">
+                                <rect key="frame" x="71" y="179" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="mi@casa.es" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wnj-ff-JLM">
+                                <rect key="frame" x="206" y="360" width="185" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Triky" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ge9-vm-sQc">
+                                <rect key="frame" x="206" y="297" width="185" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Triky-el-famoso-Monstruo-de-la_54363259499_54028874188_960_639" translatesAutoresizingMaskIntoConstraints="NO" id="2yt-pC-1fX">
+                                <rect key="frame" x="206" y="126" width="185" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="OFu-fd-Sqs"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqi-Je-9Ng">
+                                <rect key="frame" x="91" y="220" width="56" height="30"/>
+                                <state key="normal" title="Escoger"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="LTS-fq-c7k" eventType="touchUpInside" id="3jc-1m-m3o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dzH-DH-Px0" firstAttribute="trailing" secondItem="Z3I-jy-FIf" secondAttribute="trailing" id="57m-ng-KZ8"/>
+                            <constraint firstItem="0Rt-oi-jBe" firstAttribute="centerX" secondItem="eqi-Je-9Ng" secondAttribute="centerX" id="BIk-DZ-qeh"/>
+                            <constraint firstItem="2yt-pC-1fX" firstAttribute="leading" secondItem="0Rt-oi-jBe" secondAttribute="trailing" constant="38" id="EBs-NL-4hs"/>
+                            <constraint firstItem="Icw-H1-ROc" firstAttribute="top" secondItem="wnj-ff-JLM" secondAttribute="bottom" constant="166" id="FXX-ue-7S4"/>
+                            <constraint firstItem="ge9-vm-sQc" firstAttribute="trailing" secondItem="2yt-pC-1fX" secondAttribute="trailing" id="Ftj-Z8-grV"/>
+                            <constraint firstItem="wnj-ff-JLM" firstAttribute="centerY" secondItem="Z3I-jy-FIf" secondAttribute="centerY" id="GRW-j2-2dU"/>
+                            <constraint firstItem="eqi-Je-9Ng" firstAttribute="top" secondItem="0Rt-oi-jBe" secondAttribute="bottom" constant="20" id="IFn-Ma-1lF"/>
+                            <constraint firstItem="dzH-DH-Px0" firstAttribute="leading" secondItem="Z3I-jy-FIf" secondAttribute="leading" id="Iyk-k8-EZK"/>
+                            <constraint firstItem="0Rt-oi-jBe" firstAttribute="trailing" secondItem="dzH-DH-Px0" secondAttribute="trailing" id="Kck-sv-0VP"/>
+                            <constraint firstItem="Z3I-jy-FIf" firstAttribute="top" secondItem="dzH-DH-Px0" secondAttribute="bottom" constant="42" id="MXa-Ej-4jh"/>
+                            <constraint firstItem="0Rt-oi-jBe" firstAttribute="leading" secondItem="CAj-Zh-IeX" secondAttribute="leadingMargin" constant="51" id="P2A-Qx-Fas"/>
+                            <constraint firstItem="2yt-pC-1fX" firstAttribute="bottom" secondItem="eqi-Je-9Ng" secondAttribute="bottom" id="S4X-72-LGO"/>
+                            <constraint firstItem="ge9-vm-sQc" firstAttribute="centerY" secondItem="dzH-DH-Px0" secondAttribute="centerY" id="Ttd-OA-SJD"/>
+                            <constraint firstItem="ge9-vm-sQc" firstAttribute="trailing" secondItem="wnj-ff-JLM" secondAttribute="trailing" id="YVp-CW-vxU"/>
+                            <constraint firstItem="2yt-pC-1fX" firstAttribute="leading" secondItem="eqi-Je-9Ng" secondAttribute="trailing" constant="59" id="fY3-zp-wmK"/>
+                            <constraint firstItem="ge9-vm-sQc" firstAttribute="top" secondItem="2yt-pC-1fX" secondAttribute="bottom" constant="47" id="hjN-J0-TMY"/>
+                            <constraint firstItem="0Rt-oi-jBe" firstAttribute="leading" secondItem="dzH-DH-Px0" secondAttribute="leading" id="ibK-sn-pZA"/>
+                            <constraint firstItem="2yt-pC-1fX" firstAttribute="top" secondItem="O7p-bh-Nk3" secondAttribute="bottom" constant="62" id="imo-Q6-1V9"/>
+                            <constraint firstItem="ge9-vm-sQc" firstAttribute="leading" secondItem="wnj-ff-JLM" secondAttribute="leading" id="lB1-VB-JbN"/>
+                            <constraint firstItem="2yt-pC-1fX" firstAttribute="leading" secondItem="ge9-vm-sQc" secondAttribute="leading" id="ldX-F7-0yV"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Editar" id="MXY-Y5-ay7">
+                        <barButtonItem key="rightBarButtonItem" title="Guardar" id="35J-5B-ef7">
+                            <connections>
+                                <segue destination="Bi6-CA-DUq" kind="unwind" identifier="SaveAlumno" unwindAction="update:" id="b17-lV-Qyq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="email" destination="wnj-ff-JLM" id="bXW-xs-F3s"/>
+                        <outlet property="name" destination="ge9-vm-sQc" id="Nmf-C2-gJd"/>
+                        <outlet property="photo" destination="2yt-pC-1fX" id="n64-go-DkC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Teu-vc-o1n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Bi6-CA-DUq" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3254" y="-136"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="4bS-CM-ej0">
@@ -128,7 +293,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="sVa-jh-qqg" kind="relationship" relationship="viewControllers" id="c7S-jO-nly"/>
+                        <segue destination="a4i-Xo-Vwv" kind="relationship" relationship="viewControllers" id="c7S-jO-nly"/>
                         <segue destination="sSh-sO-5oz" kind="relationship" relationship="viewControllers" id="qWW-jC-qMq"/>
                     </connections>
                 </tabBarController>
@@ -136,8 +301,28 @@
             </objects>
             <point key="canvasLocation" x="958" y="278"/>
         </scene>
+        <!--Alumno-->
+        <scene sceneID="eEH-kV-QaB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a4i-Xo-Vwv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Alumno" id="QfY-QI-hhg"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nx8-HJ-PpK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sVa-jh-qqg" kind="relationship" relationship="rootViewController" id="E4T-ZR-a4L"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9S3-9w-UVv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1778" y="-64"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Triky-el-famoso-Monstruo-de-la_54363259499_54028874188_960_639" width="959" height="639"/>
         <image name="playstore-icon.png" width="512" height="512"/>
     </resources>
 </document>

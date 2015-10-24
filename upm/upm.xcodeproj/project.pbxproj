@@ -14,6 +14,8 @@
 		E55602181BAF113B000758F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E55602171BAF113B000758F2 /* Assets.xcassets */; };
 		E556021B1BAF113B000758F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E55602191BAF113B000758F2 /* LaunchScreen.storyboard */; };
 		E55602231BB8871C000758F2 /* playstore-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E55602221BB8871C000758F2 /* playstore-icon.png */; settings = {ASSET_TAGS = (); }; };
+		E55D7D2D1BDC26AF0025DA17 /* EditAlumnoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E55D7D2C1BDC26AF0025DA17 /* EditAlumnoViewController.m */; settings = {ASSET_TAGS = (); }; };
+		E55D7D301BDC2D250025DA17 /* AlumnoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E55D7D2F1BDC2D250025DA17 /* AlumnoViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,10 @@
 		E556021A1BAF113B000758F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E556021C1BAF113B000758F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E55602221BB8871C000758F2 /* playstore-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "playstore-icon.png"; path = "../../escupm01_new/android/playstore-icon.png"; sourceTree = "<group>"; };
+		E55D7D2B1BDC26AF0025DA17 /* EditAlumnoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditAlumnoViewController.h; sourceTree = "<group>"; };
+		E55D7D2C1BDC26AF0025DA17 /* EditAlumnoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditAlumnoViewController.m; sourceTree = "<group>"; };
+		E55D7D2E1BDC2D250025DA17 /* AlumnoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlumnoViewController.h; sourceTree = "<group>"; };
+		E55D7D2F1BDC2D250025DA17 /* AlumnoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlumnoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,10 @@
 				E556020F1BAF113B000758F2 /* AppDelegate.m */,
 				E55602111BAF113B000758F2 /* ViewController.h */,
 				E55602121BAF113B000758F2 /* ViewController.m */,
+				E55D7D2E1BDC2D250025DA17 /* AlumnoViewController.h */,
+				E55D7D2F1BDC2D250025DA17 /* AlumnoViewController.m */,
+				E55D7D2B1BDC26AF0025DA17 /* EditAlumnoViewController.h */,
+				E55D7D2C1BDC26AF0025DA17 /* EditAlumnoViewController.m */,
 				E55602141BAF113B000758F2 /* Main.storyboard */,
 				E55602171BAF113B000758F2 /* Assets.xcassets */,
 				E55602221BB8871C000758F2 /* playstore-icon.png */,
@@ -155,7 +165,9 @@
 			files = (
 				E55602131BAF113B000758F2 /* ViewController.m in Sources */,
 				E55602101BAF113B000758F2 /* AppDelegate.m in Sources */,
+				E55D7D2D1BDC26AF0025DA17 /* EditAlumnoViewController.m in Sources */,
 				E556020D1BAF113B000758F2 /* main.m in Sources */,
+				E55D7D301BDC2D250025DA17 /* AlumnoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +316,7 @@
 				E55602211BAF113B000758F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
