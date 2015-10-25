@@ -21,6 +21,7 @@
 		E5B73DF21BDC4731005BE0BF /* AsignaturaViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B73DF11BDC4731005BE0BF /* AsignaturaViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		E5B73DF51BDC54F4005BE0BF /* AyudaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B73DF41BDC54F4005BE0BF /* AyudaViewController.m */; settings = {ASSET_TAGS = (); }; };
 		E5B73DF71BDC56E2005BE0BF /* ayuda.html in Resources */ = {isa = PBXBuildFile; fileRef = E5B73DF61BDC56E2005BE0BF /* ayuda.html */; settings = {ASSET_TAGS = (); }; };
+		E5B73DF91BDC5F40005BE0BF /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E5B73DF81BDC5F40005BE0BF /* Settings.bundle */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		E5B73DF31BDC54F4005BE0BF /* AyudaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AyudaViewController.h; sourceTree = "<group>"; };
 		E5B73DF41BDC54F4005BE0BF /* AyudaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AyudaViewController.m; sourceTree = "<group>"; };
 		E5B73DF61BDC56E2005BE0BF /* ayuda.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ayuda.html; sourceTree = "<group>"; };
+		E5B73DF81BDC5F40005BE0BF /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				E55D7D2C1BDC26AF0025DA17 /* EditAlumnoViewController.m */,
 				E5B73DF31BDC54F4005BE0BF /* AyudaViewController.h */,
 				E5B73DF41BDC54F4005BE0BF /* AyudaViewController.m */,
+				E5B73DF81BDC5F40005BE0BF /* Settings.bundle */,
 				E5B73DF01BDC4731005BE0BF /* AsignaturaViewCell.h */,
 				E5B73DF11BDC4731005BE0BF /* AsignaturaViewCell.m */,
 				E55D7D371BDC357B0025DA17 /* ExpedienteTableViewController.h */,
@@ -176,6 +179,7 @@
 				E5B73DF71BDC56E2005BE0BF /* ayuda.html in Resources */,
 				E55602181BAF113B000758F2 /* Assets.xcassets in Resources */,
 				E55602231BB8871C000758F2 /* playstore-icon.png in Resources */,
+				E5B73DF91BDC5F40005BE0BF /* Settings.bundle in Resources */,
 				E55602161BAF113B000758F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
