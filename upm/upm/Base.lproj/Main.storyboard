@@ -83,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="262" y="278"/>
         </scene>
-        <!--Item 2-->
+        <!--Avisos-->
         <scene sceneID="a2r-1d-Xzk">
             <objects>
-                <viewController id="sSh-sO-5oz" sceneMemberID="viewController">
+                <viewController title="Avisos" id="sSh-sO-5oz" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AFn-nL-13c"/>
                         <viewControllerLayoutGuide type="bottom" id="ZRx-Dd-kBJ"/>
@@ -96,11 +96,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="4Qv-XP-Q09"/>
+                    <navigationItem key="navigationItem" title="Avisos" id="pg0-61-dP1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="djG-tV-9dA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1778" y="608"/>
+            <point key="canvasLocation" x="2590" y="608"/>
         </scene>
         <!--Alumno-->
         <scene sceneID="j8f-1e-RM3">
@@ -265,6 +265,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Editar" id="MXY-Y5-ay7">
+                        <barButtonItem key="backBarButtonItem" title="Volver" id="XYn-mR-Kgw"/>
                         <barButtonItem key="rightBarButtonItem" title="Guardar" id="35J-5B-ef7">
                             <connections>
                                 <segue destination="Bi6-CA-DUq" kind="unwind" identifier="SaveAlumno" unwindAction="update:" id="b17-lV-Qyq"/>
@@ -294,7 +295,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="a4i-Xo-Vwv" kind="relationship" relationship="viewControllers" id="c7S-jO-nly"/>
-                        <segue destination="sSh-sO-5oz" kind="relationship" relationship="viewControllers" id="qWW-jC-qMq"/>
+                        <segue destination="u0s-I5-Uhg" kind="relationship" relationship="viewControllers" id="KM0-Sm-ota"/>
+                        <segue destination="wfS-g9-LIN" kind="relationship" relationship="viewControllers" id="kSC-Z1-Zbt"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nfn-Cv-Ae4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -305,7 +307,7 @@
         <scene sceneID="eEH-kV-QaB">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a4i-Xo-Vwv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Alumno" id="QfY-QI-hhg"/>
+                    <tabBarItem key="tabBarItem" title="Alumno" image="Student-50" id="QfY-QI-hhg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nx8-HJ-PpK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -320,8 +322,137 @@
             </objects>
             <point key="canvasLocation" x="1778" y="-64"/>
         </scene>
+        <!--Avisos-->
+        <scene sceneID="AL7-Ls-PW9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wfS-g9-LIN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Avisos" image="Mailbox Closed Flag Up-50" id="4Qv-XP-Q09"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BRg-EM-tUO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sSh-sO-5oz" kind="relationship" relationship="rootViewController" id="cA1-4H-COU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tUw-Z3-QtP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1778" y="608"/>
+        </scene>
+        <!--Asignaturas-->
+        <scene sceneID="Xwo-Jm-Kdd">
+            <objects>
+                <tableViewController title="Asignaturas" id="A0V-KY-Stv" customClass="ExpedienteTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ieh-1v-CsK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="Obr-sb-4UU" customClass="AsignaturaViewCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Obr-sb-4UU" id="3f9-y3-qiW">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBp-iA-OTz">
+                                            <rect key="frame" x="19" y="0.0" width="313" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="codigo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNJ-Gb-EtN">
+                                            <rect key="frame" x="19" y="23" width="98" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="98" id="MQ6-0q-KKz"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="curso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtE-Cr-WdP">
+                                            <rect key="frame" x="233" y="22" width="99" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="convocatoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7D-ac-ObU">
+                                            <rect key="frame" x="126" y="22" width="99" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nota" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ykv-bR-toD">
+                                            <rect key="frame" x="354" y="11" width="37" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Ykv-bR-toD" firstAttribute="centerY" secondItem="3f9-y3-qiW" secondAttribute="centerY" id="1xS-a2-T9z"/>
+                                        <constraint firstItem="FNJ-Gb-EtN" firstAttribute="baseline" secondItem="n7D-ac-ObU" secondAttribute="firstBaseline" id="6vJ-rI-nTP"/>
+                                        <constraint firstItem="GtE-Cr-WdP" firstAttribute="trailing" secondItem="QBp-iA-OTz" secondAttribute="trailing" id="8i8-2d-6cd"/>
+                                        <constraint firstItem="n7D-ac-ObU" firstAttribute="leading" secondItem="FNJ-Gb-EtN" secondAttribute="trailing" constant="9" id="9Fx-cE-mLC"/>
+                                        <constraint firstItem="QBp-iA-OTz" firstAttribute="centerX" secondItem="n7D-ac-ObU" secondAttribute="centerX" id="BV9-TX-x4D"/>
+                                        <constraint firstItem="FNJ-Gb-EtN" firstAttribute="centerY" secondItem="n7D-ac-ObU" secondAttribute="centerY" id="Np0-jg-H1R"/>
+                                        <constraint firstAttribute="bottom" secondItem="GtE-Cr-WdP" secondAttribute="bottom" id="Wz9-F9-uDy"/>
+                                        <constraint firstItem="Ykv-bR-toD" firstAttribute="leading" secondItem="QBp-iA-OTz" secondAttribute="trailing" constant="22" id="aCi-x4-YGz"/>
+                                        <constraint firstItem="QBp-iA-OTz" firstAttribute="leading" secondItem="3f9-y3-qiW" secondAttribute="leadingMargin" constant="11" id="bhn-gb-tLp"/>
+                                        <constraint firstItem="QBp-iA-OTz" firstAttribute="top" secondItem="3f9-y3-qiW" secondAttribute="top" id="cBS-EE-fDa"/>
+                                        <constraint firstItem="GtE-Cr-WdP" firstAttribute="leading" secondItem="n7D-ac-ObU" secondAttribute="trailing" constant="8" symbolic="YES" id="esn-HI-fLl"/>
+                                        <constraint firstItem="FNJ-Gb-EtN" firstAttribute="leading" secondItem="QBp-iA-OTz" secondAttribute="leading" id="hBn-ba-vho"/>
+                                        <constraint firstItem="FNJ-Gb-EtN" firstAttribute="baseline" secondItem="n7D-ac-ObU" secondAttribute="baseline" id="kCr-ga-8Fc"/>
+                                        <constraint firstItem="GtE-Cr-WdP" firstAttribute="baseline" secondItem="n7D-ac-ObU" secondAttribute="baseline" id="oz2-ak-aGt"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="codigo" destination="FNJ-Gb-EtN" id="D6Z-1o-RGa"/>
+                                    <outlet property="convocatoria" destination="n7D-ac-ObU" id="13t-WJ-2Ie"/>
+                                    <outlet property="curso" destination="GtE-Cr-WdP" id="COP-C4-scM"/>
+                                    <outlet property="name" destination="QBp-iA-OTz" id="M4s-fI-PUk"/>
+                                    <outlet property="nota" destination="Ykv-bR-toD" id="doe-cp-82Z"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="A0V-KY-Stv" id="dk0-PC-FAJ"/>
+                            <outlet property="delegate" destination="A0V-KY-Stv" id="EON-Me-WUv"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Expediente" id="i8i-A3-1zg"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nrH-Cg-NZd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2590" y="1516"/>
+        </scene>
+        <!--Expediente-->
+        <scene sceneID="ysM-d8-Iyk">
+            <objects>
+                <navigationController title="Expediente" automaticallyAdjustsScrollViewInsets="NO" id="u0s-I5-Uhg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Expediente" image="For Experienced-50" id="7fd-mg-po0"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GvK-AN-Won">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="A0V-KY-Stv" kind="relationship" relationship="rootViewController" id="244-V2-rxp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fhM-WN-G8y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1778" y="1516"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="For Experienced-50" width="50" height="50"/>
+        <image name="Mailbox Closed Flag Up-50" width="50" height="50"/>
+        <image name="Student-50" width="50" height="50"/>
         <image name="Triky-el-famoso-Monstruo-de-la_54363259499_54028874188_960_639" width="959" height="639"/>
         <image name="playstore-icon.png" width="512" height="512"/>
     </resources>
