@@ -19,6 +19,8 @@
 		E55D7D361BDC34450025DA17 /* Asignatura.m in Sources */ = {isa = PBXBuildFile; fileRef = E55D7D351BDC34450025DA17 /* Asignatura.m */; settings = {ASSET_TAGS = (); }; };
 		E55D7D391BDC357B0025DA17 /* ExpedienteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E55D7D381BDC357B0025DA17 /* ExpedienteTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		E5B73DF21BDC4731005BE0BF /* AsignaturaViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B73DF11BDC4731005BE0BF /* AsignaturaViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		E5B73DF51BDC54F4005BE0BF /* AyudaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B73DF41BDC54F4005BE0BF /* AyudaViewController.m */; settings = {ASSET_TAGS = (); }; };
+		E5B73DF71BDC56E2005BE0BF /* ayuda.html in Resources */ = {isa = PBXBuildFile; fileRef = E5B73DF61BDC56E2005BE0BF /* ayuda.html */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,9 @@
 		E55D7D381BDC357B0025DA17 /* ExpedienteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpedienteTableViewController.m; sourceTree = "<group>"; };
 		E5B73DF01BDC4731005BE0BF /* AsignaturaViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsignaturaViewCell.h; sourceTree = "<group>"; };
 		E5B73DF11BDC4731005BE0BF /* AsignaturaViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsignaturaViewCell.m; sourceTree = "<group>"; };
+		E5B73DF31BDC54F4005BE0BF /* AyudaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AyudaViewController.h; sourceTree = "<group>"; };
+		E5B73DF41BDC54F4005BE0BF /* AyudaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AyudaViewController.m; sourceTree = "<group>"; };
+		E5B73DF61BDC56E2005BE0BF /* ayuda.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ayuda.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +80,7 @@
 		E556020A1BAF113B000758F2 /* upm */ = {
 			isa = PBXGroup;
 			children = (
+				E5B73DF61BDC56E2005BE0BF /* ayuda.html */,
 				E556020E1BAF113B000758F2 /* AppDelegate.h */,
 				E556020F1BAF113B000758F2 /* AppDelegate.m */,
 				E55602111BAF113B000758F2 /* ViewController.h */,
@@ -83,11 +89,13 @@
 				E55D7D2F1BDC2D250025DA17 /* AlumnoViewController.m */,
 				E55D7D2B1BDC26AF0025DA17 /* EditAlumnoViewController.h */,
 				E55D7D2C1BDC26AF0025DA17 /* EditAlumnoViewController.m */,
-				E55602141BAF113B000758F2 /* Main.storyboard */,
+				E5B73DF31BDC54F4005BE0BF /* AyudaViewController.h */,
+				E5B73DF41BDC54F4005BE0BF /* AyudaViewController.m */,
 				E5B73DF01BDC4731005BE0BF /* AsignaturaViewCell.h */,
 				E5B73DF11BDC4731005BE0BF /* AsignaturaViewCell.m */,
 				E55D7D371BDC357B0025DA17 /* ExpedienteTableViewController.h */,
 				E55D7D381BDC357B0025DA17 /* ExpedienteTableViewController.m */,
+				E55602141BAF113B000758F2 /* Main.storyboard */,
 				E55602171BAF113B000758F2 /* Assets.xcassets */,
 				E55602221BB8871C000758F2 /* playstore-icon.png */,
 				E55602191BAF113B000758F2 /* LaunchScreen.storyboard */,
@@ -165,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E556021B1BAF113B000758F2 /* LaunchScreen.storyboard in Resources */,
+				E5B73DF71BDC56E2005BE0BF /* ayuda.html in Resources */,
 				E55602181BAF113B000758F2 /* Assets.xcassets in Resources */,
 				E55602231BB8871C000758F2 /* playstore-icon.png in Resources */,
 				E55602161BAF113B000758F2 /* Main.storyboard in Resources */,
@@ -182,6 +191,7 @@
 				E5B73DF21BDC4731005BE0BF /* AsignaturaViewCell.m in Sources */,
 				E55602131BAF113B000758F2 /* ViewController.m in Sources */,
 				E55602101BAF113B000758F2 /* AppDelegate.m in Sources */,
+				E5B73DF51BDC54F4005BE0BF /* AyudaViewController.m in Sources */,
 				E55D7D391BDC357B0025DA17 /* ExpedienteTableViewController.m in Sources */,
 				E55D7D2D1BDC26AF0025DA17 /* EditAlumnoViewController.m in Sources */,
 				E556020D1BAF113B000758F2 /* main.m in Sources */,

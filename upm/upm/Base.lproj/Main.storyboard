@@ -297,6 +297,7 @@
                         <segue destination="a4i-Xo-Vwv" kind="relationship" relationship="viewControllers" id="c7S-jO-nly"/>
                         <segue destination="u0s-I5-Uhg" kind="relationship" relationship="viewControllers" id="KM0-Sm-ota"/>
                         <segue destination="wfS-g9-LIN" kind="relationship" relationship="viewControllers" id="kSC-Z1-Zbt"/>
+                        <segue destination="m8n-9c-2XN" kind="relationship" relationship="viewControllers" id="D6q-6D-JrS"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nfn-Cv-Ae4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -448,10 +449,45 @@
             </objects>
             <point key="canvasLocation" x="1778" y="1516"/>
         </scene>
+        <!--Ayuda-->
+        <scene sceneID="Cdl-Ov-bC0">
+            <objects>
+                <viewController title="Ayuda" id="m8n-9c-2XN" customClass="AyudaViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ohe-sS-7pn"/>
+                        <viewControllerLayoutGuide type="bottom" id="0EQ-IK-NEP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y9v-eX-vSk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vkd-aI-uoJ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vkd-aI-uoJ" secondAttribute="trailing" id="JGo-Jv-dMt"/>
+                            <constraint firstItem="vkd-aI-uoJ" firstAttribute="leading" secondItem="Y9v-eX-vSk" secondAttribute="leading" id="V3v-2b-rgZ"/>
+                            <constraint firstItem="vkd-aI-uoJ" firstAttribute="top" secondItem="Y9v-eX-vSk" secondAttribute="top" id="eNJ-Q2-gfv"/>
+                            <constraint firstItem="vkd-aI-uoJ" firstAttribute="bottom" secondItem="0EQ-IK-NEP" secondAttribute="top" id="tv2-88-6yf"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ayuda" image="Search-50" id="Vgt-fm-nG6"/>
+                    <connections>
+                        <outlet property="browser" destination="vkd-aI-uoJ" id="HQo-tt-Cxg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1vU-Qk-vGi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1762" y="2223"/>
+        </scene>
     </scenes>
     <resources>
         <image name="For Experienced-50" width="50" height="50"/>
         <image name="Mailbox Closed Flag Up-50" width="50" height="50"/>
+        <image name="Search-50" width="50" height="50"/>
         <image name="Student-50" width="50" height="50"/>
         <image name="Triky-el-famoso-Monstruo-de-la_54363259499_54028874188_960_639" width="959" height="639"/>
         <image name="playstore-icon.png" width="512" height="512"/>
