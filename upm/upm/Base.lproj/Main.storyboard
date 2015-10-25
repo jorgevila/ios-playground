@@ -83,24 +83,79 @@
             </objects>
             <point key="canvasLocation" x="262" y="278"/>
         </scene>
-        <!--Avisos-->
-        <scene sceneID="a2r-1d-Xzk">
+        <!--Avisos Page View-->
+        <scene sceneID="rvt-P9-A83">
             <objects>
-                <viewController title="Avisos" id="sSh-sO-5oz" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" title="Avisos Page View" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ZOw-FL-BJ9" customClass="AvisosPageViewController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Avisos" image="Mailbox Closed Flag Up-50" id="ImA-Go-DyS"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0LQ-mk-b16" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1762" y="635"/>
+        </scene>
+        <!--Aviso View Controller-->
+        <scene sceneID="CSd-xU-gYQ">
+            <objects>
+                <viewController storyboardIdentifier="AvisoViewController" id="rCJ-Ls-7GH" customClass="AvisoViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="AFn-nL-13c"/>
-                        <viewControllerLayoutGuide type="bottom" id="ZRx-Dd-kBJ"/>
+                        <viewControllerLayoutGuide type="top" id="R2I-f3-e6J"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ins-Tw-LtE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="rYi-Ny-mVU">
+                    <view key="view" contentMode="scaleToFill" id="wbl-ch-Qhx">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwP-GF-FMA">
+                                <rect key="frame" x="126" y="197" width="348" height="21"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wTe-lW-YJB">
+                                <rect key="frame" x="126" y="236" width="348" height="240"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J7S-rE-VlN">
+                                <rect key="frame" x="126" y="28" width="348" height="134"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="cEo-0A-iE9"/>
+                                    <constraint firstAttribute="width" constant="348" id="nsd-S6-F7B"/>
+                                </constraints>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="ILi-yj-MYb">
+                                <rect key="frame" x="281" y="543" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="currentPageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </pageControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NwP-GF-FMA" firstAttribute="top" secondItem="J7S-rE-VlN" secondAttribute="bottom" constant="35" id="0yJ-C1-VpT"/>
+                            <constraint firstItem="J7S-rE-VlN" firstAttribute="top" secondItem="R2I-f3-e6J" secondAttribute="bottom" constant="8" symbolic="YES" id="20G-uE-5dO"/>
+                            <constraint firstAttribute="bottom" secondItem="ILi-yj-MYb" secondAttribute="bottom" constant="20" symbolic="YES" id="4ET-SA-5Vc"/>
+                            <constraint firstItem="NwP-GF-FMA" firstAttribute="leading" secondItem="wTe-lW-YJB" secondAttribute="leading" id="6Le-rN-dke"/>
+                            <constraint firstItem="J7S-rE-VlN" firstAttribute="centerX" secondItem="wbl-ch-Qhx" secondAttribute="centerX" id="Dlg-MV-gnr"/>
+                            <constraint firstItem="J7S-rE-VlN" firstAttribute="trailing" secondItem="NwP-GF-FMA" secondAttribute="trailing" id="Mkl-Qi-qjR"/>
+                            <constraint firstItem="wTe-lW-YJB" firstAttribute="top" secondItem="NwP-GF-FMA" secondAttribute="bottom" constant="18" id="Qd4-sh-VJ1"/>
+                            <constraint firstItem="ILi-yj-MYb" firstAttribute="centerX" secondItem="wTe-lW-YJB" secondAttribute="centerX" id="flK-tP-bPX"/>
+                            <constraint firstItem="J7S-rE-VlN" firstAttribute="leading" secondItem="NwP-GF-FMA" secondAttribute="leading" id="kuw-1W-Z98"/>
+                            <constraint firstItem="wTe-lW-YJB" firstAttribute="trailing" secondItem="NwP-GF-FMA" secondAttribute="trailing" id="vak-Ud-GWi"/>
+                            <constraint firstItem="ILi-yj-MYb" firstAttribute="top" secondItem="wTe-lW-YJB" secondAttribute="bottom" constant="67" id="wR5-qK-Lbk"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Avisos" id="pg0-61-dP1"/>
+                    <connections>
+                        <outlet property="imageView" destination="J7S-rE-VlN" id="iry-zM-aqA"/>
+                        <outlet property="labelTitle" destination="NwP-GF-FMA" id="n9N-41-Lr8"/>
+                        <outlet property="pageControl" destination="ILi-yj-MYb" id="A1u-z2-cgS"/>
+                        <outlet property="textDescription" destination="wTe-lW-YJB" id="wJu-ad-Su7"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="djG-tV-9dA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kvj-5I-rWP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2590" y="608"/>
+            <point key="canvasLocation" x="2466" y="621"/>
         </scene>
         <!--Alumno-->
         <scene sceneID="j8f-1e-RM3">
@@ -296,7 +351,7 @@
                     <connections>
                         <segue destination="a4i-Xo-Vwv" kind="relationship" relationship="viewControllers" id="c7S-jO-nly"/>
                         <segue destination="u0s-I5-Uhg" kind="relationship" relationship="viewControllers" id="KM0-Sm-ota"/>
-                        <segue destination="wfS-g9-LIN" kind="relationship" relationship="viewControllers" id="kSC-Z1-Zbt"/>
+                        <segue destination="ZOw-FL-BJ9" kind="relationship" relationship="viewControllers" id="u0G-sa-lb9"/>
                         <segue destination="m8n-9c-2XN" kind="relationship" relationship="viewControllers" id="D6q-6D-JrS"/>
                     </connections>
                 </tabBarController>
@@ -322,25 +377,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9S3-9w-UVv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1778" y="-64"/>
-        </scene>
-        <!--Avisos-->
-        <scene sceneID="AL7-Ls-PW9">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wfS-g9-LIN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Avisos" image="Mailbox Closed Flag Up-50" id="4Qv-XP-Q09"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BRg-EM-tUO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="sSh-sO-5oz" kind="relationship" relationship="rootViewController" id="cA1-4H-COU"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tUw-Z3-QtP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1778" y="608"/>
         </scene>
         <!--Asignaturas-->
         <scene sceneID="Xwo-Jm-Kdd">
