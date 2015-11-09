@@ -7,27 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83C7592ABA2360A3F266A086 /* libPods-upm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8BD9E2403974FFD821CB24 /* libPods-upm.a */; };
 		E556020D1BAF113B000758F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E556020C1BAF113B000758F2 /* main.m */; };
 		E55602101BAF113B000758F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E556020F1BAF113B000758F2 /* AppDelegate.m */; };
 		E55602131BAF113B000758F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E55602121BAF113B000758F2 /* ViewController.m */; };
 		E55602161BAF113B000758F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E55602141BAF113B000758F2 /* Main.storyboard */; };
 		E55602181BAF113B000758F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E55602171BAF113B000758F2 /* Assets.xcassets */; };
 		E556021B1BAF113B000758F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E55602191BAF113B000758F2 /* LaunchScreen.storyboard */; };
-		E55602231BB8871C000758F2 /* playstore-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E55602221BB8871C000758F2 /* playstore-icon.png */; settings = {ASSET_TAGS = (); }; };
-		E55D7D2D1BDC26AF0025DA17 /* EditAlumnoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E55D7D2C1BDC26AF0025DA17 /* EditAlumnoViewController.m */; settings = {ASSET_TAGS = (); }; };
-		E55D7D301BDC2D250025DA17 /* AlumnoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E55D7D2F1BDC2D250025DA17 /* AlumnoViewController.m */; settings = {ASSET_TAGS = (); }; };
-		E55D7D361BDC34450025DA17 /* Asignatura.m in Sources */ = {isa = PBXBuildFile; fileRef = E55D7D351BDC34450025DA17 /* Asignatura.m */; settings = {ASSET_TAGS = (); }; };
-		E55D7D391BDC357B0025DA17 /* ExpedienteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E55D7D381BDC357B0025DA17 /* ExpedienteTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		E5B73DF21BDC4731005BE0BF /* AsignaturaViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B73DF11BDC4731005BE0BF /* AsignaturaViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		E5B73DF51BDC54F4005BE0BF /* AyudaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B73DF41BDC54F4005BE0BF /* AyudaViewController.m */; settings = {ASSET_TAGS = (); }; };
-		E5B73DF71BDC56E2005BE0BF /* ayuda.html in Resources */ = {isa = PBXBuildFile; fileRef = E5B73DF61BDC56E2005BE0BF /* ayuda.html */; settings = {ASSET_TAGS = (); }; };
-		E5B73DF91BDC5F40005BE0BF /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E5B73DF81BDC5F40005BE0BF /* Settings.bundle */; settings = {ASSET_TAGS = (); }; };
-		E5B9852B1BDCD8ED009F80B3 /* AvisoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B9852A1BDCD8ED009F80B3 /* AvisoViewController.m */; settings = {ASSET_TAGS = (); }; };
-		E5B9852E1BDCDA2E009F80B3 /* AvisosPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B9852D1BDCDA2E009F80B3 /* AvisosPageViewController.m */; settings = {ASSET_TAGS = (); }; };
-		E5B985311BDD2227009F80B3 /* Aviso.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B985301BDD2227009F80B3 /* Aviso.m */; settings = {ASSET_TAGS = (); }; };
+		E55602231BB8871C000758F2 /* playstore-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E55602221BB8871C000758F2 /* playstore-icon.png */; };
+		E55D7D2D1BDC26AF0025DA17 /* EditAlumnoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E55D7D2C1BDC26AF0025DA17 /* EditAlumnoViewController.m */; };
+		E55D7D301BDC2D250025DA17 /* AlumnoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E55D7D2F1BDC2D250025DA17 /* AlumnoViewController.m */; };
+		E55D7D361BDC34450025DA17 /* Asignatura.m in Sources */ = {isa = PBXBuildFile; fileRef = E55D7D351BDC34450025DA17 /* Asignatura.m */; };
+		E55D7D391BDC357B0025DA17 /* ExpedienteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E55D7D381BDC357B0025DA17 /* ExpedienteTableViewController.m */; };
+		E5B73DF21BDC4731005BE0BF /* AsignaturaViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B73DF11BDC4731005BE0BF /* AsignaturaViewCell.m */; };
+		E5B73DF51BDC54F4005BE0BF /* AyudaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B73DF41BDC54F4005BE0BF /* AyudaViewController.m */; };
+		E5B73DF71BDC56E2005BE0BF /* ayuda.html in Resources */ = {isa = PBXBuildFile; fileRef = E5B73DF61BDC56E2005BE0BF /* ayuda.html */; };
+		E5B73DF91BDC5F40005BE0BF /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E5B73DF81BDC5F40005BE0BF /* Settings.bundle */; };
+		E5B9852B1BDCD8ED009F80B3 /* AvisoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B9852A1BDCD8ED009F80B3 /* AvisoViewController.m */; };
+		E5B9852E1BDCDA2E009F80B3 /* AvisosPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B9852D1BDCDA2E009F80B3 /* AvisosPageViewController.m */; };
+		E5B985311BDD2227009F80B3 /* Aviso.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B985301BDD2227009F80B3 /* Aviso.m */; };
+		E5DA6F871BF0AC0C00122CA1 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DA6F861BF0AC0C00122CA1 /* Login.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A8BD9E2403974FFD821CB24 /* libPods-upm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-upm.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91235BC26BDB31BEA11B1659 /* Pods-upm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-upm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-upm/Pods-upm.debug.xcconfig"; sourceTree = "<group>"; };
+		958BA0504AA55057BB0B5AAC /* Pods-upm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-upm.release.xcconfig"; path = "Pods/Target Support Files/Pods-upm/Pods-upm.release.xcconfig"; sourceTree = "<group>"; };
 		E55602081BAF113B000758F2 /* upm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = upm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E556020C1BAF113B000758F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E556020E1BAF113B000758F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,6 +64,8 @@
 		E5B9852D1BDCDA2E009F80B3 /* AvisosPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvisosPageViewController.m; sourceTree = "<group>"; };
 		E5B9852F1BDD2227009F80B3 /* Aviso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aviso.h; sourceTree = "<group>"; };
 		E5B985301BDD2227009F80B3 /* Aviso.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aviso.m; sourceTree = "<group>"; };
+		E5DA6F851BF0AC0C00122CA1 /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
+		E5DA6F861BF0AC0C00122CA1 /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,17 +73,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C7592ABA2360A3F266A086 /* libPods-upm.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50D195C00FDEE080B19F52DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91235BC26BDB31BEA11B1659 /* Pods-upm.debug.xcconfig */,
+				958BA0504AA55057BB0B5AAC /* Pods-upm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5752CAD3A94A879C84A9819E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A8BD9E2403974FFD821CB24 /* libPods-upm.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E55601FF1BAF113B000758F2 = {
 			isa = PBXGroup;
 			children = (
 				E556020A1BAF113B000758F2 /* upm */,
 				E55602091BAF113B000758F2 /* Products */,
+				50D195C00FDEE080B19F52DB /* Pods */,
+				5752CAD3A94A879C84A9819E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +148,8 @@
 				E55D7D351BDC34450025DA17 /* Asignatura.m */,
 				E5B9852F1BDD2227009F80B3 /* Aviso.h */,
 				E5B985301BDD2227009F80B3 /* Aviso.m */,
+				E5DA6F851BF0AC0C00122CA1 /* Login.h */,
+				E5DA6F861BF0AC0C00122CA1 /* Login.m */,
 			);
 			path = upm;
 			sourceTree = "<group>";
@@ -140,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E556021F1BAF113B000758F2 /* Build configuration list for PBXNativeTarget "upm" */;
 			buildPhases = (
+				CB65EC7E8CE7F337F234244C /* Check Pods Manifest.lock */,
 				E55602041BAF113B000758F2 /* Sources */,
 				E55602051BAF113B000758F2 /* Frameworks */,
 				E55602061BAF113B000758F2 /* Resources */,
+				D50000C3A175E68B19777E8D /* Embed Pods Frameworks */,
+				FFCD27B95DE7CA689542FAB1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,6 +233,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CB65EC7E8CE7F337F234244C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D50000C3A175E68B19777E8D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-upm/Pods-upm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFCD27B95DE7CA689542FAB1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-upm/Pods-upm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E55602041BAF113B000758F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -208,6 +288,7 @@
 			files = (
 				E5B985311BDD2227009F80B3 /* Aviso.m in Sources */,
 				E55D7D361BDC34450025DA17 /* Asignatura.m in Sources */,
+				E5DA6F871BF0AC0C00122CA1 /* Login.m in Sources */,
 				E5B73DF21BDC4731005BE0BF /* AsignaturaViewCell.m in Sources */,
 				E55602131BAF113B000758F2 /* ViewController.m in Sources */,
 				E55602101BAF113B000758F2 /* AppDelegate.m in Sources */,
@@ -327,6 +408,7 @@
 		};
 		E55602201BAF113B000758F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91235BC26BDB31BEA11B1659 /* Pods-upm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = upm/Info.plist;
@@ -338,6 +420,7 @@
 		};
 		E55602211BAF113B000758F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 958BA0504AA55057BB0B5AAC /* Pods-upm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = upm/Info.plist;
