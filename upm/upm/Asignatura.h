@@ -6,9 +6,9 @@
 //  Copyright © 2015 jorgev. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <Mantle/Mantle.h>
 
-@interface Asignatura : NSObject
+@interface Asignatura : MTLModel <MTLJSONSerializing>
 
 /*
  {
@@ -24,14 +24,14 @@
  },
  */
 
-@property (nonatomic, strong) NSString *idAlumno;
-@property (nonatomic, strong) NSString *codAsignatura;
-@property (nonatomic, strong) NSString *convocatoria;
-@property (nonatomic, strong) NSString *nota;
-@property (nonatomic, strong) NSString *curso;
-@property (nonatomic, strong) NSString *nombre;
-@property (nonatomic, strong) NSString *tipo;
-@property (nonatomic, strong) NSString *creditos;
-@property (nonatomic, strong) NSString *temporalidad;
+@property (nonatomic, copy, readonly) NSString *idAlumno;
+@property (nonatomic, copy, readonly) NSString *codAsignatura;
+@property (nonatomic, copy, readonly) NSString *convocatoria;
+@property (nonatomic, copy, readonly) NSString *nota;
+@property (nonatomic, copy, readonly) NSString *curso;
+@property (nonatomic, copy, readonly) NSString *nombre;
+@property (nonatomic, copy, readonly) NSString *tipo;
+@property (nonatomic, copy, readonly) NSString *creditos;
+@property (nonatomic, copy, readonly) NSString *temporalidad;
 
 @end

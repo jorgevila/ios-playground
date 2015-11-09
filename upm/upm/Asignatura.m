@@ -20,4 +20,34 @@
 @synthesize creditos;
 @synthesize temporalidad;
 
+
+
+/*
+ {
+ "idalumno": "1",
+ "cod_asignatura": "27700",
+ "convocatoria": "JUN2016",
+ "nota": "5.0",
+ "curso": "Curso 1",
+ "nombre": "Formación histórica del Derecho en España",
+ "tipo": "FB",
+ "creditos": "6.0",
+ "temporalidad": "1"
+ },
+ */
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+    return @{
+             @"idAlumno": @"idalumno",
+             @"codAsignatura": @"cod_asignatura",
+             @"convocatoria": @"convocatoria",
+             @"nota": @"nota",
+             @"curso": @"curso",
+             @"nombre": @"nombre",
+             @"tipo": @"tipo",
+             @"creditos": @"creditos",
+             @"temporalidad": @"temporalidad",
+             };
+}
+
 @end

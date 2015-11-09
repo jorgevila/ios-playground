@@ -9,6 +9,7 @@
 #import "ExpedienteTableViewController.h"
 #import "Asignatura.h"
 #import "AsignaturaViewCell.h"
+#import <AFNetworking/AFHTTPRequestOperationManager.h>
 
 @interface ExpedienteTableViewController ()
 
@@ -18,6 +19,19 @@
 @implementation ExpedienteTableViewController {
 
     NSArray *asignaturas;
+}
+
+-(void) viewWillAppear:(BOOL)animated {
+    
+    // Get the stored data before the view loads
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    NSString *token = [defaults objectForKey:@"token"];
+    if ([token length] <= 0) {
+        [self performSegueWithIdentifier:@"exit_to_login" sender: self];
+    }
+    
+    [super viewWillAppear:animated];
 }
 
 - (void)viewDidLoad {
@@ -43,40 +57,28 @@
      "temporalidad": "1"
      },
      */
-    Asignatura *asig1 = [Asignatura new];
-    asig1.idAlumno = @"1";
-    asig1.codAsignatura = @"27700";
-    asig1.convocatoria = @"JUN2016";
-    asig1.nota = @"5.0";
-    asig1.curso = @"Curso 1";
-    asig1.nombre = @"Formación histórica del Derecho en España";
-    asig1.tipo = @"FB";
-    asig1.creditos = @"6.0";
-    asig1.temporalidad = @"1";
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *token = [defaults objectForKey:@"token"];
     
-    Asignatura *asig2 = [Asignatura new];
-    asig2.idAlumno = @"2";
-    asig2.codAsignatura = @"27701";
-    asig2.convocatoria = @"JUN2016";
-    asig2.nota = @"2.0";
-    asig2.curso = @"Curso 2";
-    asig2.nombre = @"Derecho Natural";
-    asig2.tipo = @"FB";
-    asig2.creditos = @"2.0";
-    asig2.temporalidad = @"1";
-    
-    Asignatura *asig3 = [Asignatura new];
-    asig3.idAlumno = @"3";
-    asig3.codAsignatura = @"27702";
-    asig3.convocatoria = @"JUN2016";
-    asig3.nota = @"10.0";
-    asig3.curso = @"Curso 3";
-    asig3.nombre = @"Derecho vinícola";
-    asig3.tipo = @"FB";
-    asig3.creditos = @"3.0";
-    asig3.temporalidad = @"1";
-    
-    asignaturas = [NSArray arrayWithObjects:asig1, asig2, asig3, nil];
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    [manager GET:@"http://149.202.115.63/expediente" parameters:@{
+        @"token" : token
+        } success:^(AFHTTPRequestOperation *operation,NSArray *JSONResponse) {
+           
+            NSLog(@"%@", JSONResponse);
+                                                                 
+            id error;
+            asignaturas = [MTLJSONAdapter modelsOfClass:Asignatura.class
+                           fromJSONArray:JSONResponse
+                           error:&error];
+
+            NSLog(@"Asignaturas: %@ (%lu)", asignaturas,(unsigned long)[asignaturas count]);
+            
+            [self.tableView reloadData];
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            NSLog(@"Network Error: %@", error);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -87,13 +89,11 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return [asignaturas count];
+    return asignaturas == nil? 0 : [asignaturas count];
 }
 
 
@@ -108,7 +108,8 @@
     cell.convocatoria.text = asignatura.convocatoria;
     cell.nota.text = asignatura.nota;
     cell.curso.text = asignatura.curso;
-    
+    NSLog(@"%@", asignatura);
+
     return cell;
 }
 

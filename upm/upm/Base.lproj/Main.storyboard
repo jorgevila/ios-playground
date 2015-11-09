@@ -479,6 +479,7 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="A0V-KY-Stv" kind="relationship" relationship="rootViewController" id="244-V2-rxp"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="exit_to_login" id="wlm-Iq-tws"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fhM-WN-G8y" userLabel="First Responder" sceneMemberID="firstResponder"/>
